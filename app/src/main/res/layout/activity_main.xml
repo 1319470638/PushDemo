@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+    <include
+            android:id="@+id/layout_commom"
+            layout="@layout/layout_head"/>
+
+    <LinearLayout
+            android:id="@+id/layout_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_commom"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/btn_gettoken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取token"/>
+        <Button
+                android:id="@+id/btn_deletetoken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除token"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layout_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_first"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/btn_setnormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="切换普通消息开关"/>
+        <Button
+                android:id="@+id/btn_setnofify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="切换通知消息开关"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layout_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_second"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/btn_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="协议"/>
+        <Button
+                android:id="@+id/btn_getpushstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取push状态"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/set_alias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding"
+                android:text="@string/set_alias"
+                android:textSize="@dimen/text_btn_size" />
+
+        <Button
+                android:id="@+id/set_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_button"
+
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding"
+                android:text="@string/set_account"
+                android:textSize="@dimen/text_btn_size" />
+
+        <Button
+                android:id="@+id/subscribe_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding"
+                android:text="@string/subscribe_topic"
+                android:textSize="@dimen/text_btn_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/unset_alias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding"
+                android:text="@string/unset_alias"
+                android:textSize="@dimen/text_btn_size" />
+
+        <Button
+                android:id="@+id/unset_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding"
+                android:text="@string/unset_account"
+                android:textSize="@dimen/text_btn_size" />
+
+        <Button
+                android:id="@+id/unsubscribe_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding"
+                android:text="@string/unsubscribe_topic"
+                android:textSize="@dimen/text_btn_size" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/pause_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding"
+                android:text="@string/pause_push"
+                android:textSize="@dimen/text_btn_size" />
+
+        <Button
+                android:id="@+id/resume_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding"
+                android:text="@string/resume_push"
+                android:textSize="@dimen/text_btn_size" />
+
+        <Button
+                android:id="@+id/set_accept_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding"
+                android:text="@string/set_accept_time"
+                android:textSize="@dimen/text_btn_size" />
+    </LinearLayout>
+
+    <ScrollView
+            android:id="@+id/sv_log"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical">
+
+        <TextView
+                android:id="@+id/log"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="false"
+                android:textSize="@dimen/text_size" />
+    </ScrollView>
+
+</LinearLayout>

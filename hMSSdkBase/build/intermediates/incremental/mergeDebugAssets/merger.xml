@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\AndroidProject\HWPushDemo\hMSSdkBase\src\main\assets"><file name="updatesdkcas.bks" path="D:\AndroidProject\HWPushDemo\hMSSdkBase\src\main\assets\updatesdkcas.bks"/></source><source path="D:\AndroidProject\HWPushDemo\hMSSdkBase\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\AndroidProject\HWPushDemo\hMSSdkBase\src\debug\assets"/></dataSet></merger>
